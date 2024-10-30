@@ -34,12 +34,12 @@ public:
                 board[row][col] = 0;
                 col++;
             } else if (ch >= '1' && ch <= '9') {
-                board[row][col] = ch - '0'; // Convert char to int
+                board[row][col] = ch - '0';
                 col++;
             } else if (ch == '|') {
-                continue; // Skip column dividers
+                continue; 
             } else if (ch == '-') {
-                continue; // Skip row dividers
+                continue; 
             }
             if (col == 9) {
                 col = 0;
@@ -83,7 +83,7 @@ private:
 };
 
 int main() {
-    // Fixed input format
+    
     std::string input = 
         ".5.1.4.|.8.6.9.|.7.2.3"
         ".8.7.2.|.3.4.5.|.6.1.9"
